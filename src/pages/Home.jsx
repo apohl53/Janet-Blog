@@ -4,7 +4,7 @@ const sortedPosts = blogPosts.sort(
   (a, b) => new Date(b.date) - new Date(a.date)
 );
 
-function Home() {
+export default function Home() {
   return (
     <div>
       <h1>Latest Blog Posts</h1>

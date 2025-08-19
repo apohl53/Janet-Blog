@@ -1,0 +1,51 @@
+footer {
+  width: 100vw;
+  background-color: #d8b4fe;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ✅ Center horizontally */
+  gap: 0.5rem;
+  flex-wrap: wrap; /* ✅ Wrap on small screens */
+}
+
+.footer-contact {
+  text-align: center; /* ✅ Center the text */
+  font-weight: bold;
+}
+
+.footer-form label {
+  font-weight: bold;
+}
+
+.footer-form input {
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.footer-form button {
+  padding: 0.5rem 1rem;
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

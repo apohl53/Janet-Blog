@@ -1,6 +1,6 @@
 import { publications } from "../data/publications";
 
-export default function Publications() {
+export function Publications() {
   return (
     <div>
       <h1>Publications</h1>
@@ -14,3 +14,5 @@ export default function Publications() {
     </div>
   );
 }
+
+export default Publications;

@@ -1,42 +1,113 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Blog.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3e8ff; /* light purple */
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  text-align: center;
+}
+header,
+footer {
+  width: 100%;
+  background-color: #d8b4fe;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #4b0082;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
   padding: 2rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+}
+
+/* Blog.css */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f3e8ff; /* light purple */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3e8ff;
   text-align: center;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #d8b4fe;
+  border-bottom: 1px solid #ccc;
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+  display: flex;
+  gap: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-link {
+  text-decoration: none;
+  color: #4b0082;
+  font-weight: bold;
 }
 
-.card {
-  padding: 2em;
+main {
+  padding: 2rem;
 }
 
-.read-the-docs {
-  color: #888;
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Add this to your main CSS file (App.css or Blog.css) */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

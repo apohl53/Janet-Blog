@@ -3,11 +3,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Publications from "./pages/Publications";
 import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div className="main-content">
+      <div className="page-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

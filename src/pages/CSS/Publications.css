@@ -1,6 +1,6 @@
 /* About.css */
 
-.about-container {
+.pub-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,31 +13,27 @@
   box-sizing: border-box;
 }
 
-.about-portrait {
+.pub-portrait {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.about-text {
+.pub-text {
   /* text-align center to center the heading and paragraph */
   text-align: center;
   -webkit-text-fill-color: black;
 }
 
-.about-wrapper {
-  max-width: 70%; /* roughly 1/3 of screen width */
-  margin: 0 auto; /* centers horizontally */
-  text-align: left; /* optional: left-align text inside container */
+.pub-wrapper {
   padding: 1rem; /* optional: some padding */
   box-sizing: border-box;
-  -webkit-text-fill-color: black;
 }
 
 /* Optional: for smaller screens, make it wider */
 @media (max-width: 768px) {
-  .about-wrapper {
+  .pub-wrapper {
     max-width: 80%; /* more readable on smaller devices */
   }
 }

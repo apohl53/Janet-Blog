@@ -1,6 +1,6 @@
 import BlogPostCard from "../components/BlogPostCard";
 import { blogPosts } from "../data/blogposts";
-import { Link } from "react-router-dom";
+import Header from "../components/Header";
 import "../App.css";
 
 const sortedPosts = blogPosts.sort(
@@ -32,20 +32,8 @@ export default function Blog() {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
-    <div className="">
-      {/* Header with navigation */}
-      <header className="header">
-        <h2 className="logo">My Blog</h2>
-        <nav className="nav">
-          <Link to="/about" className="nav-link">
-            About
-          </Link>
-          <Link to="/publications" className="nav-link">
-            Publications
-          </Link>
-        </nav>
-      </header>
-
+    <div>
+      <Header />
       <main className="page-container content-wrapper">
         {/* Render sorted posts */}
         {sortedPosts.map((post, index) => (
